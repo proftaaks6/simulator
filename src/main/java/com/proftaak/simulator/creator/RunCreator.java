@@ -13,7 +13,7 @@ public class RunCreator
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException
 	{
 		NetworkCreator.run("noord-brabant");
-		PlanCreator.run(NetworkReader.run("network"), 100);
+		PlanCreator.run(NetworkReader.run("network"), 1000);
 		Cleaner.run();
 	}
 }

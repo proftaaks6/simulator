@@ -8,6 +8,6 @@ public class Node
 	@Override
 	public String toString()
 	{
-		return "Long: " + coordinate.longitude + " Lat: " + coordinate.lattitude;
+		return "Long: " + coordinate.longitude + " Lat: " + coordinate.latitude;
 	}
 }

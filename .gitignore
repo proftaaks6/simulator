@@ -50,3 +50,5 @@ input/
 output/
 
 \.idea/sonarlint/
+
+\.idea/workspace\.xml

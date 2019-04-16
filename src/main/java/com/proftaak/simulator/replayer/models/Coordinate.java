@@ -2,11 +2,11 @@ package com.proftaak.simulator.replayer.models;
 
 public class Coordinate {
 	public double longitude;
-	public double lattitude;
+	public double latitude;
 
 	@Override
 	public String toString()
 	{
-		return "Long: " + longitude + " Lat: " + lattitude;
+		return "Long: " + longitude + " Lat: " + latitude;
 	}
 }

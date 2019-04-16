@@ -69,12 +69,15 @@ public class LinkToCoordinateTransformer
 					if (!coordOps.isEmpty()) {
 						Coordinate coordinate = null;
 						for (CoordinateOperation op : coordOps) {
+							if (!op.getAuthorityKey().equals("40")) {
+								continue;
+							}
 							try
 							{
 								op.transform(coord);
 								coordinate = new Coordinate();
 								coordinate.longitude = coord[1];
-								coordinate.lattitude = coord[0];
+								coordinate.latitude = coord[0];
 								// Only first operation gives good results
 								break;
 							} catch (IllegalCoordinateException | CoordinateOperationException ignored) { }
